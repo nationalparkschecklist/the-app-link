@@ -24,11 +24,10 @@
         }
         .container { padding: 30px; max-width: 400px; width: 90%; }
 
-        /* App Icon Styling */
         .app-icon {
             width: 120px;
             height: 120px;
-            border-radius: 24%; /* Standard app icon curvature */
+            border-radius: 24%;
             margin-bottom: 20px;
             box-shadow: 0 8px 24px rgba(0,0,0,0.12);
             object-fit: cover;
@@ -47,13 +46,14 @@
             border-radius: 14px;
             font-weight: 600;
             font-size: 17px;
-            transition: transform 0.1s ease, background-color 0.2s;
+            transition: transform 0.1s ease;
         }
         .ios { background-color: #000; color: #fff; }
         .android { background-color: #2da94f; color: #fff; }
         .btn:active { transform: scale(0.96); }
 
-        .footer-text { font-size: 12px; color: #aaa; margin-top: 40px; line-height: 1.4; }
+        .footer-text { font-size: 12px; color: #aaa; margin-top: 40px; line-height: 1.6; }
+        .author { font-weight: 600; color: #888; text-decoration: none; }
     </style>
 
     <script>
@@ -68,7 +68,6 @@
                 window.location.replace(IOS_URL);
             }
         }
-        // Attempt redirect on load
         window.onload = handleRedirect;
     </script>
 </head>
@@ -83,7 +82,8 @@
     <a href="#" onclick="window.location.href=ANDROID_URL" class="btn android">Download for Android</a>
 
     <div class="footer-text">
-        If you aren't redirected automatically,<br>tap the buttons above.
+        If you aren't redirected automatically, tap a button above.<br>
+        Built by <span class="author">Vaibhav Teli</span>
     </div>
 </div>
 </body>
